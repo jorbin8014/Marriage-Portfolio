@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groom Marriage Portfolio</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7f5f0; /* ivory / beige */
+      color: #333;
+    }
+    .navbar {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+    }
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #f7f5f0 0%, #e9f2ff 100%);
+    }
+    .hero-img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .section-title {
+      font-family: "Georgia", "Times New Roman", serif;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #7b8ba3;
+    }
+    h2 {
+      font-family: "Georgia", "Times New Roman", serif;
+      margin-bottom: 0.75rem;
+    }
+    .card-soft {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      background: #ffffff;
+    }
+    .badge-soft {
+      background: #e3efff;
+      color: #345f8f;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      padding: 0.3rem 0.75rem;
+    }
+    .photo-grid img {
+      border-radius: 0.75rem;
+      object-fit: cover;
+      width: 100%;
+      height: 230px;
+    }
+        .whatsapp-btn {
+      display: inline-block;
+      margin: 32px auto 0 auto;
+      padding: 12px 32px;
+      background: linear-gradient(90deg, #25d366, #128c7e);
+      color: #fff;
+      font-size: 1.18rem;
+      border: none;
+      border-radius: 28px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 12px rgba(37, 211, 102, 0.12);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .whatsapp-btn:hover {
+      background: linear-gradient(90deg, #128c7e, #25d366);
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.18);
+    }
+
+    footer {
+      background: #f0ede6;
+      font-size: 0.85rem;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#home">Groom Portfolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav small fw-semibold text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#family">Family</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="#photos">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#expectations">Expectations</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#video">Video</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Home -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-5 text-center">
+          <img
+            src="Jorbin_Protrait.JPG"
+            alt="Groom portrait"
+            class="hero-img"
+          />
+        </div>
+        <div class="col-md-7">
+          <span class="badge-soft mb-2 d-inline-block">Personal Marriage Portfolio</span>
+          <h1 class="fw-semibold mb-3">Hi, I’m Jorbin Jolly</h1>
+          <p class="lead mb-3">
+            Looking forward to the next chapter of life and hoping to build a warm,
+            respectful and joyful partnership.
+          </p>
+          <p class="mb-4 small text-muted">
+            This personal website is shared only for genuine matrimonial purposes.
+            Kindly maintain confidentiality and a respectful approach.
+          </p>
+          <a href="#about" class="btn btn-primary px-4 rounded-pill">
+            View My Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="mb-4">
+        <div class="section-title">Profile</div>
+        <h2>About Me</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card card-soft p-4 h-100">
+            <div class="row">
+              <div class="col-6 small">
+                <p><strong>Name:</strong> Jorbin Jolly</p>
+                <p><strong>Age:</strong> 27</p>
+                <p><strong>Date of Birth:</strong> 30/09/1998</p>
+                <p><strong>Height:</strong> 6'3" / 183]</p>
+                <p><strong>Religion:</strong> Christian</p>
+                <p><strong>Caste:</strong> RCSC / General</p>
+              </div>
+              <div class="col-6 small">
+                <p><strong>Mother Tongue:</strong> Malayalam</p>
+                <p><strong>Location:</strong> Kothamangalam, Kerala, India</p>
+                <p><strong>Profession:</strong> Tech Support Enginner at Infogem Web Solution Pvt. Ltd, Chennai</p>
+                <p><strong>Education:</strong> BCA – MG University</p>
+                <p><strong>Marital Status:</strong> Never Married</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-soft p-4 h-100">
+            <h5 class="mb-3">A short introduction</h5>
+            <p class="small mb-2">
+              I am a Tech Support Enginner currently working in
+              Chennai. Friends and family describe me as calm, responsible and
+              family-oriented.
+            </p>
+            <p class="small mb-2">
+              I value honesty, mutual respect and open communication in all
+              relationships. Outside work, I like to spend time with family, explore
+              new places and keep learning new skills.
+            </p>
+            <p class="small mb-0">
+              I am looking forward to meeting someone with whom I can build a
+              meaningful and supportive partnership.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Family -->
+  <section id="family" class="py-5">
+    <div class="container">
+      <div class="mb-4">
+        <div class="section-title">Family</div>
+        <h2>My Family</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-5 text-center">
+          <div class="card card-soft p-3">
+            <img
+              src="Family.jpg"
+              alt="Family"
+              class="img-fluid rounded-3"
+            />
+            <!-- <p class="small text-muted mt-2 mb-0">
+              (Representative placeholder – replace with your family photo)
+            </p> -->
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="card card-soft p-4 h-100">
+            <p class="small">
+              I belong to a middle class [General] family based in
+              [Kuttampuzha / Kothamangalam]. We are a close-knit family that values simplicity,
+              education and mutual respect.
+            </p>
+            <ul class="small mb-2">
+              <li><strong>Father:</strong> Jolly, Govt. Employee</li>
+              <li><strong>Mother:</strong> Reena Jolly, Homemaker</li>
+              <li><strong>Siblings:</strong>1 younger brother, unmarried and employee</li>
+            </ul>
+            <p class="small mb-0">
+              As a family we believe in maintaining strong relationships with
+              relatives, being supportive of each other’s goals and balancing
+              traditional values with a modern outlook.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Interests -->
+  <section id="interests" class="py-5">
+    <div class="container">
+      <div class="mb-4">
+        <div class="section-title">Lifestyle</div>
+        <h2>My Interests</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-soft p-4 h-100">
+            <h6>Hobbies</h6>
+            <ul class="small mb-0">
+              <li>Reading and self-improvement</li>
+              <li>Travel and short weekend trips</li>
+              <li>Photography and creative projects</li>
+              <li>Fitness / regular walks</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-soft p-4 h-100">
+            <h6>Weekend & Leisure</h6>
+            <ul class="small mb-0">
+              <li>Spending quality time with family and friends</li>
+              <li>Exploring new cafes and local food spots</li>
+              <li>Watching movies / web series</li>
+              <li>Occasional road trips</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-soft p-4 h-100">
+            <h6>Movies, Music & Lifestyle</h6>
+            <ul class="small mb-2">
+              <li>Enjoys movies and light music</li>
+              <li>Non-smoker, Non-alcohol</li>
+              <li>Spiritual / value-based outlook on life</li>
+              <li>Prefers a simple, balanced lifestyle</li>
+            </ul>
+            <p class="small mb-0">
+              Open to exploring new interests and hobbies together with a future
+              partner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photos -->
+  <section id="photos" class="py-5">
+    <div class="container">
+      <div class="mb-4">
+        <div class="section-title">Gallery</div>
+        <h2>Photos</h2>
+      </div>
+      <div class="row g-3 photo-grid">
+        <div class="col-6 col-md-4">
+          <img src="C:\Users\Jorbin\Desktop\Marriage Portfolio_2\Formal.png" alt="Formal look" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="C:\Users\Jorbin\Desktop\Marriage Portfolio_2\Tradition.png" alt="Traditional attire" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="C:\Users\Jorbin\Desktop\Marriage Portfolio_2\Family G.png" alt="With family" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="C:\Users\Jorbin\Desktop\Marriage Portfolio_2\casual.png" alt="Casual" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="C:\Users\Jorbin\Desktop\Marriage Portfolio_2\Travel.png" alt="Travel photo" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="C:\Users\Jorbin\Desktop\Marriage Portfolio_2\Outdoor.png" alt="Outdoor photo" />
+        </div>
+      </div>
+      <!-- <p class="small text-muted mt-2 mb-0">
+        Replace these placeholders with your own formal, traditional, travel and casual photos.
+      </p>
+    </div> -->
+  </section>
+
+  <!-- My Expectations -->
+  <section id="expectations" class="py-5">
+    <div class="container">
+      <div class="mb-4">
+        <div class="section-title">Partner</div>
+        <h2>My Expectations</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card card-soft p-4">
+            <p class="small">
+              I believe marriage is a partnership built on mutual respect, trust and
+              shared values. I am looking for a companion with whom I can grow
+              personally and professionally.
+            </p>
+            <ul class="small mb-2">
+              <li>Age: 25 - 28</li>
+              <li>Education: Any Graduate with Job</li>
+              <li>Location:  Open to relocation</li>
+              <li>Nature: kind, understanding, emotionally mature and family-oriented</li>
+              <li>
+                Values: respectful towards elders, positive outlook, willing to support
+                each other’s goals
+              </li>
+              <li>Lifestyle preferences that are compatible with mine</li>
+            </ul>
+            <p class="small mb-0">
+              More than anything, I value a partner with whom I can share honest
+              conversations, laughter and a supportive friendship for life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Message -->
+  <!-- <section id="video" class="py-5">
+    <div class="container">
+      <div class="mb-4">
+        <div class="section-title">Message</div>
+        <h2>Video Message (Optional)</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card card-soft p-4">
+            <p class="small mb-3">
+              You can add a short, friendly video introduction here so that families
+              can get to know you better.
+            </p> -->
+            <!-- Replace the src with your own YouTube / Vimeo / Drive embed link -->
+            <!-- <div class="ratio ratio-16x9 mb-2">
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="Intro video"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="small mb-0 text-muted">
+              If you prefer not to use a video, you can remove this section from the
+              page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact & Footer Combined -->
+   <section id="contact" class="py-5">
+<footer class="py-5 mt-4 bg-light">
+  <div class="container">
+
+    <!-- Horizontal Contact Card -->
+    <div class="card p-4 mb-4 shadow-sm border-0" style="border-radius: 20px;">
+      <div class="row g-4 align-items-center">
+
+        <!-- WhatsApp Contact -->
+        <div class="col-md-6 border-end">
+          <h5 class="mb-3">Contact Me</h5>
+          <p class="small mb-3">Like what you see? Feel free to reach out on WhatsApp!</p>
+
+          <a class="btn btn-success px-4 py-2 rounded-pill"
+            href="https://wa.me/917561098014?text=Hi%20there!%20I%20visited%20your%20portfolio%20website."
+            target="_blank">
+            💬 Message on WhatsApp
+          </a>
+        </div>
+
+        <!-- Family Contact Section -->
+        <div class="col-md-6">
+          <h5 class="mb-3">Family Contact Details</h5>
+          <ul class="small mb-3 ps-0" style="list-style: none;">
+            <li><strong>Father:</strong> Jolly Kurian — +91 62829 28874</li>
+            <li><strong>Mother:</strong> Reena Jolly — +91 95563 28595</li>
+            <li><strong>Email:</strong> jorbinjollycmi@gmail.com</li>
+          </ul>
+          <p class="small text-muted mb-0">
+            Kindly reach out during reasonable hours and mention how you received this website link.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Text -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="small">
+        Thank you for visiting. Looking forward to connecting.
+      </div>
+      <div class="small text-muted mt-2 mt-md-0">
+        All details are shared only for matrimonial purposes. Please maintain confidentiality and respect.
+      </div>
+      <div class="small mt-2 mt-md-0">
+        <a href="#home" class="text-decoration-none">Back to top</a>
+      </div>
+    </div>
+
+    </section>
+
+  </div>
+</footer>
